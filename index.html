@@ -6,9 +6,13 @@
     <script>
         window.onload = function() {
             const password = prompt("Please enter the password to access this website:");
-            if (password !== "yourag") {
+            if (password === "yourag") {
+                // Redirect to the protected page
+                window.location.href = "https://gauijdgyfhjadsdjisajdiugfaidi.jake.eu/"; // Change this to your protected page URL
+            } else {
+                // Redirect away if incsorrect
                 alert("Incorrect password. You will be redirected.");
-                window.location.href = "https://gauijdgyfhjadsdjisajdiugfaidi.jake.eu/"; // Change this to your desired redirect URL
+                window.location.href = "https://www.google.com"; // Change this to your desired redirect URL
             }
         };
     </script>
